@@ -11,3 +11,6 @@
 Введите ваш возраст: 45
 Ваши данные для входа в аккаунт: имя - Василий, пароль - vas, возраст - 45
 """
+type_list = [9, 5/6, True, [1,2], "Hi", {"books": "Sherlok", "Author": "KonanDoyle"},(1,2)]
+for i in range (len(type_list)) :
+    print(f"Тип переменной в списке: {type(type_list[i])}")
