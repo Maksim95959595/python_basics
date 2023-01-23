@@ -5,3 +5,14 @@
 1) используя функцию sort()
 2) без функции sort()
 """
+def my_func(*elem):
+    print(sum(sorted(list(elem), reverse=True)[:2]))
+
+
+try:
+    el_1 = int(input('Введите первое число: '))
+    el_2 = int(input('Введите второе число: '))
+    el_3 = int(input('Введите третье число: '))
+    my_func(el_1, el_2, el_3)
+except ValueError:
+    print("Необходимо ввести только числа!\nПереход к следующему варианту.")
